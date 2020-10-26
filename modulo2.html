@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" name="" id="nome">
+    </div>
+    <script>
+        // var inputElement = document.querySelector('input[name=entrada]');
+        // var buttonElement = document.querySelector('button.botao');
+
+        // buttonElement.onclick = function() {
+        //     var info = inputElement.value;
+        //     alert(info);
+        // }
+
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://www.google.com.br/');
+        linkElement.setAttribute('title', 'Site do Google');
+
+        var text = document.createTextNode('Acessar Google');
+        linkElement.appendChild(text);
+
+        var div = document.querySelector('#app');
+        div.appendChild(linkElement)
+    </script>
+
+</body>
+</html>
